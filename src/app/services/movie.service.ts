@@ -45,7 +45,7 @@ export class MovieService {
      * Get the detailed information for an ID using the "i" parameter
      *
      * @param {string} id imdbID to retrieve information
-     * @returns Observable with detailed information
+     * @returns Observable with detailed informationn
      */
     getDetails(id) {
         return this.http.get(`${this.url}?i=${id.trim()}&plot=full&apikey=${this.apiKey}`);
